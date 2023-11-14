@@ -3,15 +3,15 @@
 (식단 공유/ 운동 꿀팁 / 운동 인증 / 채팅 / 링크 등 )
 2)채팅
 
-[게시판]
-타입
-id
-제목
-글쓴이
-컨텐츠
-작성일자
-조회수
-추천
+[게시판] -  Board / Chat / User
+타입 Board_Type
+id Board_Id
+제목 Board_Title
+글쓴이 Board_Writer
+컨텐츠 Board_Contents
+작성일자 Board_Date
+조회수 Board_ViewCnt
+추천(좋아요) Board_Like
 
 -------
 
@@ -27,3 +27,18 @@ id
 ------
 
 캘린더 API
+
+[캘린더] Calendar
+User_Id
+Calendar_Date
+Calendar_Contents
+Calendar_Title(Type)
+
+
+_____
+[USER]
+User_Id
+User_Password
+User_Name
+User_Authority (권한)
+User_Birth ( 보류)
