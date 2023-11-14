@@ -28,11 +28,7 @@ id Board_Id
 
 캘린더 API
 
-[캘린더] Calendar
-User_Id
-Calendar_Date
-Calendar_Contents
-Calendar_Title(Type)
+Pinia 사용
 
 
 _____
@@ -40,5 +36,14 @@ _____
 User_Id
 User_Password
 User_Name
+User_NickName
 User_Authority (권한)
 User_Birth ( 보류)
+
+
+_____
+[CHATTING]
+User_Id
+Board_Id
+Chatting_Log
+Chatting_Time
