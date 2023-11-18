@@ -1,5 +1,7 @@
 # SSAFY_FINAL_PJT
+
 <br>
+Calendar
 
 ## 2023-11-14  
 Calendar demo
@@ -11,6 +13,9 @@ Create schema
 
 --------------------------
 
+<br>
+Food
+
 ## 2023-11-16 
 Re-select the topic 
 Re-design project & edit schema
@@ -20,8 +25,8 @@ Re-design project & edit schema
 
 
 ## 2023-11-18 
-Create String Boot Project 
-Study Css(Dark Mode, Acodian Menu, Header, Login Page) - Tailwind
+Create String Boot Project <br>
+Study Css(Dark Mode, Acodian Menu, Header, Login Page) - Tailwind <br>
 Edit DataBase
 
 
