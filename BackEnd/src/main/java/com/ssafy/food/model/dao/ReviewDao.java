@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.ssafy.food.model.dto.Review;
 
-public class ReviewDao {
+public interface ReviewDao {
     void insertReview(Review review);
-    List<Review> selectAll();
+    int deleteReview(int id);
+    List<Review> selectAll(int res_id);
 }

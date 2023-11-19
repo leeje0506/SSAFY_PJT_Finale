@@ -22,7 +22,7 @@ public class RestaurantController {
 	private RestaurantService restaurantService;
 
 	//목록
-	@GetMapping("/board")
+	@GetMapping("/restaurant")
 	public ResponseEntity<?> list(SearchCondition condition) {
 		List<Restaurant> list = restaurantService.search(condition);
 		
@@ -32,7 +32,7 @@ public class RestaurantController {
 	}
 
 	// 상세
-	@GetMapping("/board/{id}")
+	@GetMapping("/restaurant/{id}")
 	public ResponseEntity<Restaurant> detail(@PathVariable int id) {
 		Restaurant restaurant = restaurantService.selectOne(id);
 		if (restaurant != null)
