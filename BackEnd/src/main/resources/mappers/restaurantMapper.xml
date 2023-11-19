@@ -14,7 +14,7 @@
     <select id ="search" resultType="restaurant" parameterType="SearchCondition">
         SELECT *
         FROM restaurant
-        WHERE Res_Name LIKE concat('%' , #{word} ,'%')
+        WHERE Res_Name LIKE concat('%' , #{word} ,'%') 
         <if test="Res_Park == 1">
             AND Res_Park = 1
         </if>
@@ -36,8 +36,6 @@
         <if test="Res_GFree == 1">
             AND Res_GFree = 1
         </if>
-
-
 
     </select>
 

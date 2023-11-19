@@ -54,13 +54,12 @@
 			<version>2.3.1</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- Swagger 사용 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>

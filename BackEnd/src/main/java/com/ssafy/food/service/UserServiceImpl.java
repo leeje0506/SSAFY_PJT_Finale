@@ -10,7 +10,7 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private UserDao userDao;
 
-    @Override       //void로 두면 안될것 같은데 아닌가 컨트롤러에서 처리를 하면 되려나
+    @Override       
     public void insertUser(User user) {
         userDao.insertUser(user);
     }
