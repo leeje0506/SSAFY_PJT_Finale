@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.food.model.dto.Restaurant;
 import com.ssafy.food.model.dto.Review;
 import com.ssafy.food.service.ReviewService;
 
@@ -26,26 +27,17 @@ public class ReviewController {
     @Autowired
     private ReviewService reviewService;
 
-    @GetMapping("/restaurant/review/{id}/") 
-	public ResponseEntity<?> list(@PathVariable int id) {
-		List<Review> list = reviewService.selectAll(id);
-		
-		if (list == null || list.size() == 0)
-			return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
-		return new ResponseEntity<List<Review>>(list, HttpStatus.OK);
-	}
-
 	//등록
-	@PostMapping("/restaurant/{id}/review")  // <- 여기를  {id} 부분을 빼는게 나으려나 일단 delete 하려면 레스토랑 아이디도 필요해서
+	@PostMapping("/restaurant/review") 
 	public ResponseEntity<Review> write(@RequestBody Review review) {
 		reviewService.insertReview(review);
 		return new ResponseEntity<Review>(review, HttpStatus.CREATED);
 	}
 
 	//삭제
-	@DeleteMapping("/restaurant/{id}/review/{rev_id}") 
-	public ResponseEntity<String> delete(@PathVariable int id , @PathVariable int rev_id) {
-		if (reviewService.deleteReview(id, rev_id))
+	@DeleteMapping("/restaurant/review/{id}") 
+	public ResponseEntity<String> delete(@RequestBody Restaurant restaurant , @PathVariable int id) {
+		if (reviewService.deleteReview(restaurant.getRes_Id(), id))
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		return new ResponseEntity<String>(FAIL, HttpStatus.NOT_FOUND);
 	}

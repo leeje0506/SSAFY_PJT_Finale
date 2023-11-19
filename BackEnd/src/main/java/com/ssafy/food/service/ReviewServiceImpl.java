@@ -17,8 +17,8 @@ public class ReviewServiceImpl implements ReviewService{
     }
     
     @Override
-    public boolean deleteReview(int res_id, int rev_id) {
-        return ReviewDao.deleteReview(res_id , rev_id) == 1;
+    public boolean deleteReview(int res_id, int reveiw_id) {
+        return ReviewDao.deleteReview(res_id , reveiw_id) == 1;
     }
 
 
