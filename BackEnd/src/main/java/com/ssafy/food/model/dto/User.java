@@ -54,6 +54,10 @@ public class User {
 		return "UserDto [User_Id=" + User_Id + ", User_Pass=" + User_Pass + ", User_Name=" + User_Name + ", User_Cha="
 				+ User_Cha + "]";
 	}
+
+    public Object getPassword() {
+        return null;
+    }
 	
 	
 	

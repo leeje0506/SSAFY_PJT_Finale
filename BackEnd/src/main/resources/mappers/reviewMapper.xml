@@ -15,7 +15,7 @@
 		WHERE Res_Id = #{id}
 	</select>
 
-    <delete >
-    </delete>
+    <!-- <delete >
+    </delete> -->
 
 </mapper>
