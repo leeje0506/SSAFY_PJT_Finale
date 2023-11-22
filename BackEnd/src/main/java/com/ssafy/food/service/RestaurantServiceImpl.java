@@ -21,8 +21,13 @@ public class RestaurantServiceImpl implements RestaurantService {
     }
 
     @Override
+    public List<Restaurant> selectAll() {
+        return restaurantDao.selectAll();
+    }
+    @Override
     public List<Restaurant> search(SearchCondition condition) {
         return restaurantDao.search(condition);
     }
+
 
 }

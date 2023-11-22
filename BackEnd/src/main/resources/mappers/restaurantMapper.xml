@@ -8,13 +8,19 @@
     <select id ="selectOne" resultType="restaurant" parameterType="int">
         SELECT *
         FROM restaurant
-        WHERE id = #{id};
+        WHERE Res_id = #{id};
+    </select>
+
+    <select id ="selectAll" resultType="restaurant">
+        SELECT *
+        FROM restaurant
     </select>
  	
     <select id ="search" resultType="restaurant" parameterType="SearchCondition">
         SELECT *
         FROM restaurant
-        WHERE Res_Name LIKE concat('%' , #{word} ,'%') 
+        WHERE Res_Region LIKE concat('%' , #{con_region} ,'%') 
+            And Res_Address LIKE concat('%' , #{con_Add} ,'%')
         <if test="Res_Park == 1">
             AND Res_Park = 1
         </if>

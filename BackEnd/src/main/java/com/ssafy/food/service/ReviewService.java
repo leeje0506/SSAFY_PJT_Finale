@@ -6,6 +6,7 @@ import com.ssafy.food.model.dto.Review;
 
 public interface ReviewService  {
     void insertReview(Review review);
-    boolean deleteReview(int res_id , int reveiw_id);
+    boolean deleteReview(Review review);
+    boolean updateReview(Review review);
     List<Review> selectAll(int res_id);
 }

@@ -20,7 +20,7 @@ public class Restaurant {
 	int Res_Vegi;
     int Res_Halal;
     int Res_GFree;
-    List<Review> Res_Review;
+    List<Review> Res_Review;  // 이거 왜 넣었더라 넣을 필요가 있나... axios 요청을 두개 하면 되는데 이거 고쳐야 되네
     
 
     public Restaurant() {

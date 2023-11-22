@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import WorldCupView from '../views/WorldCupView.vue'
-import RestaurantList from '@/component/restaurant/restaurantList'
-import RestaurantDetail from '@/component/restaurant/restaurantDetail'
+import RestaurantList from '@/components/restaurant/restaurantList.vue'
+import RestaurantDetail from '@/components/restaurant/restaurantDetail.vue'
 
 
 const router = createRouter({

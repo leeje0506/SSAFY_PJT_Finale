@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import router from '@/router'
 import axios from 'axios'
 
-const Res_API = `http://localhost:8080/api/restaurant`
+const Res_API = `http://localhost:1234/api/restaurant`
 
 export const useResStore = defineStore('Res', () => {
     const ResList = ref([])
@@ -18,7 +18,7 @@ export const useResStore = defineStore('Res', () => {
 
     const Res = ref({})
     const GetRes = function (id) {
-      axios.get(`${Res_API}/${id}`)
+      return axios.get(`${Res_API}/${id}`)
         .then((response) => {
         Res.value = response.data
       })

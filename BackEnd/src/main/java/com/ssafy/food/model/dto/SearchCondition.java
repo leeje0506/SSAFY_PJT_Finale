@@ -1,7 +1,8 @@
 package com.ssafy.food.model.dto;
 
 public class SearchCondition {
-    private String word;
+    private String con_region;
+    private String con_Add;
     private int con_Park;
     private int con_Kid;
     private int con_Wheel;
@@ -14,12 +15,37 @@ public class SearchCondition {
         
     }
 
-    public String getWord() {
-        return word;
+    
+
+    public SearchCondition(String con_region, String con_Add, int con_Park, int con_Kid, int con_Wheel, int con_Pet,
+            int con_Vegi, int con_Halal, int con_GFree) {
+        this.con_region = con_region;
+        this.con_Add = con_Add;
+        this.con_Park = con_Park;
+        this.con_Kid = con_Kid;
+        this.con_Wheel = con_Wheel;
+        this.con_Pet = con_Pet;
+        this.con_Vegi = con_Vegi;
+        this.con_Halal = con_Halal;
+        this.con_GFree = con_GFree;
     }
 
-    public void setWord(String word) {
-        this.word = word;
+
+
+    public String getCon_region() {
+        return con_region;
+    }
+
+    public void setCon_region(String con_region) {
+        this.con_region = con_region;
+    }
+
+    public String getCon_Add() {
+        return con_Add;
+    }
+
+    public void setCon_Add(String con_Add) {
+        this.con_Add = con_Add;
     }
 
     public int getCon_Park() {
@@ -78,13 +104,15 @@ public class SearchCondition {
         this.con_GFree = con_GFree;
     }
 
+
+
     @Override
     public String toString() {
-        return "SearchCondition [word=" + word + ", con_Park=" + con_Park + ", con_Kid=" + con_Kid + ", con_Wheel="
-                + con_Wheel + ", con_Pet=" + con_Pet + ", con_Vegi=" + con_Vegi + ", con_Halal=" + con_Halal
-                + ", con_GFree=" + con_GFree + "]";
+        return "SearchCondition [con_region=" + con_region + ", con_Add=" + con_Add + ", con_Park=" + con_Park
+                + ", con_Kid=" + con_Kid + ", con_Wheel=" + con_Wheel + ", con_Pet=" + con_Pet + ", con_Vegi="
+                + con_Vegi + ", con_Halal=" + con_Halal + ", con_GFree=" + con_GFree + "]";
     }
-   
-   
+
+    
     
 }

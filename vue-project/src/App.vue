@@ -1,9 +1,11 @@
 <template>
-  <Game/>
+  <RouterView/>
 </template>
 
 <script setup>
 import Game from "@/components/Game.vue";
+// import map from "./components/maps/Map.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <style>

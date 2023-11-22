@@ -7,6 +7,8 @@ import com.ssafy.food.model.dto.SearchCondition;
 
 public interface RestaurantDao {
     public Restaurant selectOne(int id);
+ 
+    public List<Restaurant> selectAll();
 
     public List<Restaurant> search(SearchCondition condition);
 }

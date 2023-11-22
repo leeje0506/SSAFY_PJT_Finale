@@ -19,14 +19,19 @@ public class ReviewServiceImpl implements ReviewService{
     }
     
     @Override
-    public boolean deleteReview(int res_id, int reveiw_id) {
-        return ReviewDao.deleteReview(res_id , reveiw_id) == 1;
+    public boolean deleteReview(Review review) {
+        return ReviewDao.deleteReview(review) == 1;
     }
 
 
     @Override
     public List<Review> selectAll(int res_id) {
         return ReviewDao.selectAll(res_id);
+    }
+
+    @Override
+    public boolean updateReview(Review review) {
+        return ReviewDao.updateReview(review) == 1;
     }
 
     
