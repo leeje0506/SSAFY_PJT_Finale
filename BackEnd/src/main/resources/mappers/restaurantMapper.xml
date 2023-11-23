@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="com.ssafy.food.model.dao.RestaurantDao">
+ 	
+    <select id ="selectOne" resultType="restaurant" parameterType="int">
+        SELECT *
+        FROM restaurant
+        WHERE Res_id = #{id};
+    </select>
+
+    <select id ="selectAll" resultType="restaurant">
+        SELECT *
+        FROM restaurant
+    </select>
+ 	
+    <select id ="search" resultType="restaurant" parameterType="SearchCondition">
+        SELECT *
+        FROM restaurant
+        WHERE Res_Region LIKE concat('%' , #{con_region} ,'%') 
+            And Res_Address LIKE concat('%' , #{con_Add} ,'%')
+        <if test="Res_Park == 1">
+            AND Res_Park = 1
+        </if>
+        <if test="Res_Kid == 1">
+            AND Res_Kid = 1
+        </if>
+        <if test="Res_Wheel == 1">
+            AND Res_Wheel = 1
+        </if>
+        <if test="Res_Pet == 1">
+            AND Res_Pet = 1
+        </if>
+        <if test="Res_Vegi == 1">
+            AND Res_Vegi = 1
+        </if>
+        <if test="Res_Halal == 1">
+            AND Res_Halal = 1
+        </if>
+        <if test="Res_GFree == 1">
+            AND Res_GFree = 1
+        </if>
+
+    </select>
+
+
+
+
+ </mapper>

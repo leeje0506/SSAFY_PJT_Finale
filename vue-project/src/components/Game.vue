@@ -1,8 +1,12 @@
 <template>
   <div>
     <!-- 메인 화면으로 돌아가기 만들기 -->
-    <img src="" />
-    <h2>home</h2>
+    <RouterLink
+      to="/"
+      class="text-black text-xl font-bold md:text-2xl hover:text-yellow-700"
+    >
+      <span> WorldFood </span>
+    </RouterLink>
   </div>
   <p class="title">{{ WorldTitle }} ({{ round }}/64)</p>
   <div class="flex-box">
@@ -314,20 +318,6 @@ const clickHandler = (food) => {
 };
 </script>
 
-<!-- <style scoped>
-.flex-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.flex-1 {
-  flex: 1;
-}
-.food-img {
-  width: 100%;
-  height: auto;
-}
-</style> -->
 
 <style scoped>
 .title {
