@@ -12,13 +12,29 @@
             <div>{{ store.Res.res_Tel }}</div>
             <div>{{ store.Res.res_WDay }}</div>
             <div>{{ store.Res.res_WEnd }}</div>
-            <div>{{ store.Res.res_Park }}</div>
+
+            <div v-if="store.Res.res_Park  == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_Kid == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_Wheel == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_Pet == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_Vegi == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_Halal == 1">O</div>
+            <div v-else>X</div>
+            <div v-if="store.Res.res_GFree == 1">O</div>
+            <div v-else>X</div>
+
+            <!-- <div>{{ store.Res.res_Park }}</div>
             <div>{{ store.Res.res_Kid }}</div>
             <div>{{ store.Res.res_Wheel }}</div>
             <div>{{ store.Res.res_Pet }}</div>
             <div>{{ store.Res.res_Vegi }}</div>
             <div>{{ store.Res.res_Halal }}</div>
-            <div>{{ store.Res.res_GFree }}</div>
+            <div>{{ store.Res.res_GFree }}</div> -->
         </div>
 
         <div>
@@ -28,8 +44,6 @@
         </div>
         <div>
             <!-- <Review/>  -->
-            <p>{{ store.Res.res_Lati }}</p>
-            <p> {{ store.Res.res_Longi }}</p>
         </div>
     </div>
 </template>

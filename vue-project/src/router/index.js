@@ -24,6 +24,17 @@ const router = createRouter({
       name: 'restaurant',
       component: RestaurantList
     },
+    // {
+    //   path: "/page",
+    //   name: "Page",
+    //   component: Page,
+    //   children:[
+    //     {
+    //       path: '/list',
+    //       component: List,
+    //     }
+    //   ]
+    // },
     {
       path: '/restaurant/:id',
       name: 'restaurantDetail',

@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService{
 		//DB 해당 ID만 넘겨서 데이터를 가지고 오고 가지고온 User 데이터와 내가 현재 가지고 있는 user의 비밀번호를 확인하면
 		User tmp = userDao.selectOne(user.getUser_Id());
 		//tmp가 실제 User 정보 일수도 있고 / null 넘어왔다.
-		if(tmp != null && tmp.getPassword().equals(user.getPassword()))
+		if(tmp != null && tmp.getUser_Pass().equals(user.getUser_Pass()))
 			return tmp;
 		return null;
 	}

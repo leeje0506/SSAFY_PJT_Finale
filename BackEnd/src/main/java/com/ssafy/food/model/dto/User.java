@@ -55,9 +55,7 @@ public class User {
 				+ User_Cha + "]";
 	}
 
-    public Object getPassword() {
-        return null;
-    }
+
 	
 	
 	
