@@ -1,0 +1,146 @@
+<template>
+  <template>
+    <!-- Section: Design Block -->
+    <section class="mb-32">
+      <nav
+        class="flex-no-wrap relative flex w-full items-center justify-between bg-white py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-2.5"
+        data-te-navbar-ref
+      >
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+          <button
+            class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContentX"
+            aria-controls="navbarSupportedContentX"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="[&>svg]:w-7">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-7 w-7"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+            id="navbarSupportedContentX"
+            data-te-collapse-item
+          >
+            <ul class="mr-auto flex flex-row" data-te-navbar-nav-ref>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a
+                  class="flex items-center whitespace-nowrap py-2 px-2 text-neutral-600 transition duration-300 ease-in-out focus:text-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-100 dark:focus:text-neutral-100"
+                  href="#"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  type="button"
+                  id="dropdownMenuButtonX"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-nav-link-ref
+                  >Click me
+                  <span class="ml-2 w-2">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-down"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+                <ul
+                  class="absolute z-[1000] float-left m-0 mt-1 hidden w-[300px] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton1"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      class="block w-full whitespace-normal bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-50 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      <p class="mb-1 font-bold dark:text-white">Projects</p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        Suspendisse in volutpat massa. Nulla facilisi.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-normal bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-50 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      <p class="mb-1 font-bold dark:text-white">Tools</p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        Sed aliquet diam orci, nec ornare metus semper sed.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-normal bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-50 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      <p class="mb-1 font-bold dark:text-white">Stack</p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        Integer volutpat ornare erat sit amet rutrum.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-normal bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-50 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      <p class="mb-1 font-bold dark:text-white">Templates</p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        Mauris id congue metus. Fusce pellentesque
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-normal bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-50 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      <p class="mb-1 font-bold dark:text-white">Support</p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        Ut vulputate est non quam dignissim elementum.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </template>
+</template>
+
+<script setup></script>
+
+<style scoped></style>
