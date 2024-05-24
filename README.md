@@ -1,4 +1,4 @@
-# SSAFY_FINAL_PJT
+# SSAFY_PJT_Final
 
 <br>
 Calendar
